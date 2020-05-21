@@ -168,17 +168,7 @@ df.head()
 Data is obtained through Kaggle. It contains 110,527 instances and a breakdown of variables is below.
 
 
-```python
-from IPython.display import Image
-Image("dataset.png")
-```
-
-
-
-
-![png](output_4_0.png)
-
-
+![](dataset.png)
 
 **Pre-Processing**
 
