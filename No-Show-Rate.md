@@ -171,70 +171,33 @@ Gender and Neighbourhood were converted from categorical to indicator variable, 
 The no-show rate of the dataset is 20.2%
 
 
-```python
-Image("age.png")
-```
-
-
-
-
-![png](output_7_0.png)
+![](age.png)
 
 
 
 The no-show rate by age tends to be higher than the population average for patients younger than 45. It should be noted that the variation in rate increases drastically in patients older than 80 years old. This is due to having less datapoints for these ages.
 
 
-```python
-Image("aptlag.png")
-```
-
-
-
-
-![png](output_9_0.png)
+![](aptlag.png)
 
 
 
 Patients who scheduled their appointment within a week tend to show more often than those who schedule further out. This is especially true for patients who have same day schedule (lag time = 0).This variable will likely be useful in models.
 
-
-```python
-Image("chronic.png")
-```
-
-
-
-
-![png](output_11_0.png)
+![](chronic.png)
 
 
 
 Patients with a chronic illness are more likely to show up for their appointment. This is true for those with hypertension and diabetes.
 
-
-```python
-Image("scholarship.png")
-```
-
-
-
-
-![png](output_13_0.png)
+![](scholarship.png)
 
 
 
 The scholarship variable indicates that those patients on a social welfare program are more likely to miss their appointment than those who are not. Essentially, this is an indicator for patients with limited financial resources. 
 
 
-```python
-Image("remind_sol.png")
-```
-
-
-
-
-![png](output_15_0.png)
+![](remind_sol.png)
 
 
 
@@ -282,29 +245,14 @@ AUC is used when a single number is needed to summarize the model performance or
 
 Below is a summary table of the different classification models tested as well as the best AUC achieved for each model.
 
-
-```python
-Image('auc.png')
-```
-
-
-
-
-![png](output_19_0.png)
+![](auc.png)
 
 
 
 Our best selected Gradient Boost model (AUC 0.74) was evaluated against the Test (0.7422) and validation dataset (0.7351). A plot of the ROC curve of this model is below. 
 
 
-```python
-Image('roc.png')
-```
-
-
-
-
-![png](output_21_0.png)
+![](roc.png)
 
 
 
